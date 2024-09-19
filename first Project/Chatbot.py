@@ -8,7 +8,7 @@ def sentiment_analysis(text):
     words = text.lower().split()
     
     # Count the number of positive and negative words
-    pos_count = sum(1 for word in words if word in positive_words)
+    pos_count = sum(1 for word in words if word in positive_words) 
     neg_count = sum(1 for word in words if word in negative_words)
     
     # Determine sentiment based on counts
