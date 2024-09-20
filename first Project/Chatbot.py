@@ -4,7 +4,7 @@ def sentiment_analysis(text):
                      
     negative_words = ["bad", "sad", "hate", "terrible", "poor","not","never","neither","barely","hardly","scarcely","seldom","rarely","nothing","none","no one","nobody","nowhere"]
 
-    # Convert the text to lowercase and split into words
+    # Convert the text to lowercase and split into  words
     words = text.lower().split()
     
     # Count the number of positive and negative words
@@ -17,7 +17,7 @@ def sentiment_analysis(text):
     elif pos_count < neg_count:
         return "Negative"
     else:
-        return "Neutral"
+        return "Neutral" 
 
 text = input("Enter a sentence: ")
 print("Sentiment:", sentiment_analysis(text))
